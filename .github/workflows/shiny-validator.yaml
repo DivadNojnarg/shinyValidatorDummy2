@@ -62,7 +62,7 @@ jobs:
 
       - name: Audit app 🏥
         shell: Rscript {0}
-        run: pkgload::load_all(); shinyValidator::audit_app(headless_actions = custom_horde)
+        run: pkgload::load_all(); shinyValidator::audit_app(headless_actions = custom_horde, flow = FALSE)
 
       - name: Deploy to GitHub pages 🚀
         if: github.event_name != 'pull_request'
