@@ -10,7 +10,14 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     fluidPage(
-      h1("shinyValidatorDummy2")
+      sliderInput(
+        "obs",
+        "Number of observations:",
+        min = 0,
+        max = 1000,
+        value = 500
+      ),
+      plotOutput("distPlot")
     )
   )
 }

@@ -6,4 +6,7 @@
 #' @noRd
 app_server <- function(input, output, session) {
   # Your application server logic
+  output$distPlot <- renderPlot({
+    make_hist(input$obs)
+  })
 }

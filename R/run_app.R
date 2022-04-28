@@ -1,28 +1,25 @@
-#' Run the Shiny Application
+#' Run example app
 #'
-#' @param ... arguments to pass to golem_opts.
-#' See `?golem::get_golem_options` for more details.
-#' @inheritParams shiny::shinyApp
-#'
+#' @return A shiny app object
 #' @export
-#' @importFrom shiny shinyApp
-#' @importFrom golem with_golem_options
-run_app <- function(
-  onStart = NULL,
-  options = list(),
-  enableBookmarking = NULL,
-  uiPattern = "/",
-  ...
-) {
-  with_golem_options(
-    app = shinyApp(
-      ui = app_ui,
-      server = app_server,
-      onStart = onStart,
-      options = options,
-      enableBookmarking = enableBookmarking,
-      uiPattern = uiPattern
-    ),
-    golem_opts = list(...)
-  )
+#' @import shiny
+run_app <- function() {
+  # serve js tools for Monkey test (in case proxy blocks external scripts)
+  addResourcePath("gremlins", "inst/shinyValidator-js")
+  # DON'T CHANGE (INTERNAL TO SHINYVALIDATOR)
+  if (!exists(".enable_reactlog")) .enable_reactlog <- FALSE
+  if (!exists(".profile_code")) .profile_code <- FALSE
+
+  if (.enable_reactlog || .profile_code) {
+    tmp <- body(app_server)
+    start <- length(tmp) + 1 # start just before the closing }
+    body(app_server)[[start]] <- substitute(
+      onSessionEnded(function() {
+        stopApp(reactlog())
+      })
+    )
+  }
+  runApp(shinyApp(app_ui, app_server))
 }
+
+globalVariables(c("app_ui", "app_server"))

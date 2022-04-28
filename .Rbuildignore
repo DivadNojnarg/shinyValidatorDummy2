@@ -6,3 +6,8 @@
 dev_history.R
 ^dev$
 $run_dev.*
+^\.github$
+^\.Rprofile$
+^\.lintr$
+^public$
+^recording\.log$
