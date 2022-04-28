@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>reactlog</title>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Source+Sans+Pro&amp;subset=latin-ext" rel="stylesheet"> -->
+  <link rel="stylesheet" type="text/css" href="reactlogAsset/fira-mono_source-sans-pro_latin-ext.css">
+  <link rel="stylesheet" type="text/css" href="reactlogAsset/reactlog.css">
+
+  <script>
+    try {
+      window.__APP_DATA__ = [
+  {
+    "action": "define",
+    "reactId": "r3",
+    "label": "Theme Counter",
+    "type": "reactiveVal",
+    "value": " num 0",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.64008
+  },
+  {
+    "action": "define",
+    "reactId": "r4",
+    "label": "plotObj",
+    "type": "observable",
+    "value": " NULL",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.67432
+  },
+  {
+    "action": "define",
+    "reactId": "r5",
+    "label": "output$distPlot",
+    "type": "observer",
+    "value": " NULL",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.68113
+  },
+  {
+    "action": "createContext",
+    "ctxId": "ctx1",
+    "label": "output$distPlot",
+    "type": "observer",
+    "prevCtxId": null,
+    "srcref": [9, 33, 10, 24, 33, 24],
+    "srcfile": "app_server.R",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.68384
+  },
+  {
+    "action": "invalidateStart",
+    "reactId": "r5",
+    "ctxId": "ctx1",
+    "type": "observer",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.68394
+  },
+  {
+    "action": "asyncStart",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.68416
+  },
+  {
+    "action": "invalidateEnd",
+    "reactId": "r5",
+    "ctxId": "ctx1",
+    "type": "observer",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.6942
+  },
+  {
+    "action": "createContext",
+    "ctxId": "ctx2",
+    "label": "output$distPlot",
+    "type": "observer",
+    "prevCtxId": "ctx1",
+    "srcref": [9, 33, 10, 24, 33, 24],
+    "srcfile": "app_server.R",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.71195
+  },
+  {
+    "action": "enter",
+    "reactId": "r5",
+    "ctxId": "ctx2",
+    "type": "observer",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.71218
+  },
+  {
+    "action": "dependsOn",
+    "reactId": "r5",
+    "depOnReactId": "r4",
+    "ctxId": "ctx2",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72248
+  },
+  {
+    "action": "createContext",
+    "ctxId": "ctx3",
+    "label": "plotObj",
+    "type": "observable",
+    "prevCtxId": null,
+    "srcref": null,
+    "srcfile": "",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72271
+  },
+  {
+    "action": "enter",
+    "reactId": "r4",
+    "ctxId": "ctx3",
+    "type": "observable",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72285
+  },
+  {
+    "action": "createContext",
+    "ctxId": "ctx4",
+    "label": "[isolate]",
+    "type": "isolate",
+    "prevCtxId": null,
+    "srcref": null,
+    "srcfile": null,
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72314
+  },
+  {
+    "action": "isolateEnter",
+    "reactId": "r4",
+    "ctxId": "ctx4",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72329
+  },
+  {
+    "action": "define",
+    "reactId": "r2$output_distPlot_width",
+    "label": "clientData$output_distPlot_width",
+    "type": "reactiveValuesKey",
+    "value": " int 962",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72428
+  },
+  {
+    "action": "dependsOn",
+    "reactId": "r4",
+    "depOnReactId": "r2$output_distPlot_width",
+    "ctxId": "ctx4",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72459
+  },
+  {
+    "action": "define",
+    "reactId": "r2$output_distPlot_height",
+    "label": "clientData$output_distPlot_height",
+    "type": "reactiveValuesKey",
+    "value": " int 400",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72533
+  },
+  {
+    "action": "dependsOn",
+    "reactId": "r4",
+    "depOnReactId": "r2$output_distPlot_height",
+    "ctxId": "ctx4",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72561
+  },
+  {
+    "action": "isolateExit",
+    "reactId": "r4",
+    "ctxId": "ctx4",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72574
+  },
+  {
+    "action": "isolateInvalidateStart",
+    "reactId": "r4",
+    "ctxId": "ctx4",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72581
+  },
+  {
+    "action": "dependsOnRemove",
+    "reactId": "r4",
+    "depOnReactId": "r2$output_distPlot_width",
+    "ctxId": "ctx4",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72587
+  },
+  {
+    "action": "dependsOnRemove",
+    "reactId": "r4",
+    "depOnReactId": "r2$output_distPlot_height",
+    "ctxId": "ctx4",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72595
+  },
+  {
+    "action": "isolateInvalidateEnd",
+    "reactId": "r4",
+    "ctxId": "ctx4",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72602
+  },
+  {
+    "action": "define",
+    "reactId": "r2$pixelratio",
+    "label": "clientData$pixelratio",
+    "type": "reactiveValuesKey",
+    "value": " int 1",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72673
+  },
+  {
+    "action": "dependsOn",
+    "reactId": "r4",
+    "depOnReactId": "r2$pixelratio",
+    "ctxId": "ctx3",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.72701
+  },
+  {
+    "action": "define",
+    "reactId": "r1$obs",
+    "label": "input$obs",
+    "type": "reactiveValuesKey",
+    "value": " int 500",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.73593
+  },
+  {
+    "action": "dependsOn",
+    "reactId": "r4",
+    "depOnReactId": "r1$obs",
+    "ctxId": "ctx3",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.73622
+  },
+  {
+    "action": "exit",
+    "reactId": "r4",
+    "ctxId": "ctx3",
+    "type": "observable",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.76342
+  },
+  {
+    "action": "dependsOn",
+    "reactId": "r5",
+    "depOnReactId": "r2$output_distPlot_width",
+    "ctxId": "ctx2",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.76356
+  },
+  {
+    "action": "dependsOn",
+    "reactId": "r5",
+    "depOnReactId": "r2$output_distPlot_height",
+    "ctxId": "ctx2",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.76369
+  },
+  {
+    "action": "dependsOn",
+    "reactId": "r5",
+    "depOnReactId": "r2$pixelratio",
+    "ctxId": "ctx2",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.7638
+  },
+  {
+    "action": "exit",
+    "reactId": "r5",
+    "ctxId": "ctx2",
+    "type": "observer",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.77428
+  },
+  {
+    "action": "asyncStop",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157184.77436
+  },
+  {
+    "action": "idle",
+    "session": null,
+    "time": 1651157184.77497
+  },
+  {
+    "action": "invalidateStart",
+    "reactId": "r5",
+    "ctxId": "ctx2",
+    "type": "observer",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157185.00297
+  },
+  {
+    "action": "dependsOnRemove",
+    "reactId": "r5",
+    "depOnReactId": "r4",
+    "ctxId": "ctx2",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157185.00308
+  },
+  {
+    "action": "dependsOnRemove",
+    "reactId": "r5",
+    "depOnReactId": "r2$output_distPlot_width",
+    "ctxId": "ctx2",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157185.00316
+  },
+  {
+    "action": "dependsOnRemove",
+    "reactId": "r5",
+    "depOnReactId": "r2$output_distPlot_height",
+    "ctxId": "ctx2",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157185.00323
+  },
+  {
+    "action": "dependsOnRemove",
+    "reactId": "r5",
+    "depOnReactId": "r2$pixelratio",
+    "ctxId": "ctx2",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157185.0033
+  },
+  {
+    "action": "invalidateEnd",
+    "reactId": "r5",
+    "ctxId": "ctx2",
+    "type": "observer",
+    "session": "fb354095b79c4bb349198daa4a1ef748",
+    "time": 1651157185.00338
+  }
+];
+      window.__APP_TIME__ = String("TRUE").toLowerCase() === "true";
+    } catch (e) {}
+  </script>
+
+  
+  <script src="reactlogAsset/reactlog.js"></script>
+</head>
+
+<body>
+  <div id="bodyContent">
+    <div id="statusHeader">
+      <div id="movementButtons" style="z-index:1;">
+        <img id="prevUserMarkButton" class="navigationButton" src="./reactlogAsset/images/prev-mark.svg" alt="Previous User Mark" title="Previous User Mark (home)" height="24" width="30">
+        <img id="prevIdleButton" class="navigationButton" src="./reactlogAsset/images/prev-idle.svg" alt="Previous idle" title="Previous idle (&#8997; &#8679; &#8592;)" height="24" width="30">
+        <img id="prevOutputCalcButton" class="navigationButton" src="./reactlogAsset/images/prev-output-calc.svg" alt="Previous output calculation" title="Previous output calculation (&#8997; &#8592;)" height="24" width="30">
+        <img id="prevStepButton"  class="navigationButton" src="./reactlogAsset/images/prev-step.svg"  alt="Previous step"  title="Previous step (&#8592;)"  height="24" width="30">
+        <img id="nextStepButton"  class="navigationButton" src="./reactlogAsset/images/next-step.svg"  alt="Next step"      title="Next step (&#8594;)"      height="24" width="30">
+        <img id="nextOutputCalcButton" class="navigationButton" src="./reactlogAsset/images/next-output-calc.svg" alt="Next output calculation"     title="Next output calculation (&#8997; &#8594;)"     height="24" width="30">
+        <img id="nextIdleButton" class="navigationButton" src="./reactlogAsset/images/next-idle.svg" alt="Next idle"     title="Next idle (&#8997; &#8679; &#8594;)"     height="24" width="30">
+        <img id="nextUserMarkButton" class="navigationButton" src="./reactlogAsset/images/next-mark.svg" alt="Next User Mark"     title="Next User Mark (end)"     height="24" width="30">
+      </div>
+      <div id="eventStep">Step: <span id="eventStepNum" class="monospaced-pre"></span></div>
+      <div id="eventStatus"></div>
+      <div id="eventWrapper">
+        <div id="eventTimeBlock">
+          <div id="eventTime">Time: </div>
+          <div id="eventTimeNum" class="monospaced-pre"></div>
+        </div>
+        <div id="eventSessionBlock">
+          <div id="eventSession">Session: </div>
+          <div id="eventSessionNum" class="monospaced-pre"></div>
+        </div>
+      </div>
+      <div id="filter">
+        <input id="search" type="text" size="12" placeholder="Search Labels..."/>
+      </div>
+    </div> <!-- end statusHeader -->
+
+    <div id="timeline" style="z-index:1;">
+      <div id="timeline-bg">
+        <div id="timeline-fill"></div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="cytoWrapper">
+        <div id="cyto"></div>
+      </div>
+      <div id="legend">
+        <div class="legendRow legendRowTopMiddle"><div id="legendReady" class="legendColor"></div><div class="legendLabel">Ready</div></div>
+        <div class="legendRow legendRowTopMiddle"><div id="legendCalculating" class="legendColor"></div><div class="legendLabel">Calculating</div></div>
+        <div class="legendRow legendRowTopMiddle"><div id="legendInvalidating" class="legendColor"></div><div class="legendLabel">Invalidating</div></div>
+        <div class="legendRow" id="legendRowInvalidated"><div id="legendInvalidated" class="legendColor"></div><div class="legendLabel">Invalidated</div></div>
+        <div class="legendRow" id="legendRowFrozen" style="display:none"><div id="legendFrozen" class="legendColor"></div><div class="legendLabel">Frozen</div></div>
+      </div>
+      <div id="logEntry" style="display: none;"></div>
+    </div>
+  </div>
+</body>
+</html>
