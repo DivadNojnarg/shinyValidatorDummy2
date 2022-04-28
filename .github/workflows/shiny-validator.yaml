@@ -62,7 +62,7 @@ jobs:
 
       - name: Audit app 🏥
         shell: Rscript {0}
-        run: shinyValidator::audit_app(flow = FALSE)
+        run: shinyValidator::audit_app(headless_actions = custom_horde)
 
       - name: Deploy to GitHub pages 🚀
         if: github.event_name != 'pull_request'
