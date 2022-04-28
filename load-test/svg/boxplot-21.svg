@@ -64,17 +64,6 @@
 <circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
 <circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
 <circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
-<circle cx='171.17' cy='33.71' r='1.95' style='stroke-width: 0.71; stroke: #333333; fill: #333333;' />
 <line x1='171.17' y1='258.12' x2='171.17' y2='258.12' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <line x1='171.17' y1='258.12' x2='171.17' y2='258.12' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polygon points='101.58,258.12 101.58,258.12 240.76,258.12 240.76,258.12 101.58,258.12 ' style='stroke-width: 1.07; stroke: #333333; fill: #7FC97F;' />
@@ -89,7 +78,7 @@
 </defs>
 <g clip-path='url(#cpNTkuODJ8MjgyLjUyfDUuNDh8MjIuNDk=)'>
 <rect x='59.82' y='5.48' width='222.70' height='17.01' style='stroke-width: 1.07; stroke: none; fill: #D9D9D9;' />
-<text x='171.17' y='17.19' text-anchor='middle' style='font-size: 8.80px;fill: #1A1A1A; font-family: "Liberation Sans";' textLength='81.18px' lengthAdjust='spacingAndGlyphs'>Event 13) Set: obs</text>
+<text x='171.17' y='17.19' text-anchor='middle' style='font-size: 8.80px;fill: #1A1A1A; font-family: "Liberation Sans";' textLength='81.18px' lengthAdjust='spacingAndGlyphs'>Event 18) Set: obs</text>
 </g>
 <g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwyODguMDA=)'>
 <polyline points='171.17,272.08 171.17,269.35 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
